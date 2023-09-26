@@ -6,7 +6,7 @@ if test -z "$(git status -s)"; then
   exit 0;
 else
   git config --local user.email "3572066061@qq.com"
-  git config --local user.name "yanglan2004511"
+  git config --local user.name "Ylanw"
   git pull origin master
   git add data/*
   git commit -m "update bing json"
