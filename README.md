@@ -14,18 +14,12 @@
 
 ​		2、提供json接口和图片接口
 
-### 壁纸资源
-
-自搭建服务需要必应壁纸资源的话可去到博客自取：
-
-[分享2009-至今的必应壁纸](https://blog.aqcoder.cn/posts/6b5b8616/)
-
 ### API接口说明
 
 #### 获取今日壁纸
 
 ```shell
-https://api.bimg.cc/today?w=1920&h=1080&mkt=zh-CN
+https://bing-api.adunm.top/today?w=1920&h=1080&mkt=zh-CN
 ```
 
 | 参数名 |   类型   | 是否必要 |        备注        |
@@ -38,7 +32,7 @@ https://api.bimg.cc/today?w=1920&h=1080&mkt=zh-CN
 #### 获取随机壁纸
 
 ```shell
-https://api.bimg.cc/random?w=1920&h=1080&mkt=zh-CN
+https://bing-api.adunm.top/random?w=1920&h=1080&mkt=zh-CN
 ```
 
 | 参数名 |   类型   | 是否必要 |        备注        |
@@ -51,7 +45,7 @@ https://api.bimg.cc/random?w=1920&h=1080&mkt=zh-CN
 #### 获取壁纸JSON数据
 
 ```shell
-https://api.bimg.cc/all?page=1&order=asc&limit=10&w=1920&h=1080&mkt=zh-CN
+https://bing-api.adunm.top/all?page=1&order=asc&limit=10&w=1920&h=1080&mkt=zh-CN
 ```
 
 | 参数名 |   类型   | 是否必要 |              备注               |
@@ -98,7 +92,7 @@ locations: [
 #### 获取壁纸数量
 
 ```shell
-https://api.bimg.cc/total?mkt=zh-CN
+https://bing-api.adunm.top/total?mkt=zh-CN
 ```
 
 | 参数名 |   类型   | 是否必要 |      备注       |
@@ -129,11 +123,6 @@ docker run -itd --name bimg --restart=always --env MONGODB_URI=<url> -p 9127:888
 
 `MONGODB_URI`：存储方式为mongodb时的环境变量
 
-### 未来计划
-
-- [x] 补充前端展示必应壁纸 [必应壁纸 | 每天都有不一样的心情](https://bimg.cc/)
-
-- [x] 使用本地部署，加快api速度 https://api.bimg.cc/
 
 ### 鸣谢
 
